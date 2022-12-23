@@ -1,6 +1,8 @@
-import { Sprites } from '../../../types/pokemon'
+import { Sprites } from '../../../types/pokemon';
 
-export default interface Pokemon {
+interface Pokemon {
 	loading: boolean;
 	pokemonSprites: Sprites;
 }
+
+export default Pokemon;

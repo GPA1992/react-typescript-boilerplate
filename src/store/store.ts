@@ -1,13 +1,13 @@
-import { configureStore } from '@reduxjs/toolkit'
-import counterSlice from './slices/counter'
-import pokemonSlice from './slices/getPokemon'
+import { configureStore } from '@reduxjs/toolkit';
+import counterSlice from './slices/counter';
+import pokemonSlice from './slices/getPokemon';
 
 export const store = configureStore({
-  reducer: {
+	reducer: {
 		counter: counterSlice,
-	getPokemon: pokemonSlice,
+		getPokemon: pokemonSlice,
 	},
-})
+});
 
 
 export type RootState = ReturnType<typeof store.getState>
